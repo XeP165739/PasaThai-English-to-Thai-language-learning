@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 XePaghetti 
+Copyright (c) 2026
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,22 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+===============================================================================
+THIRD-PARTY DATA & INTELLECTUAL PROPERTY DISCLAIMER
+===============================================================================
+
+1. LEXITRON 2.0 Dictionary Data:
+   The dataset located in `lexitron_2.0_csv/` (including `etlex-dictionary-data.js`)
+   is copyrighted by the National Electronics and Computer Technology Center 
+   (NECTEC) and the National Science and Technology Development Agency (NSTDA), 
+   Thailand. 
+
+   The MIT License above applies SOLELY to the source code developed for the 
+   PasaThai Chrome extension and DOES NOT apply to NECTEC's LEXITRON dictionary 
+   data. The LEXITRON database is provided under NECTEC's non-commercial, 
+   research, and educational licensing terms.
+
+2. LibreTranslate:
+   This project interfaces with LibreTranslate, an open-source machine translation 
+   engine licensed separately under the GNU Affero General Public License v3.0 (AGPLv3).
