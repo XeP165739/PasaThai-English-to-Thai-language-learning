@@ -58,14 +58,14 @@ To save bandwidth, disk space, and startup time, configure LibreTranslate to dow
    pip install libretranslate
    ```
    
-Start the local server limiting downloaded language models to English and Thai only:
+2. Start the local server limiting downloaded language models to English and Thai only:
 
   ```Bash
   libretranslate --load-only en,th --port 5000
   Via Docker:
   ```
 
-Run the Docker container restricting loaded languages to English and Thai:
+2. Run the Docker container restricting loaded languages to English and Thai:
 
   ```Bash
     docker run -p 5000:5000 libretranslate/libretranslate --load-only en,th
@@ -83,3 +83,14 @@ Open Chrome and navigate to chrome://extensions/.
 Enable Developer mode using the toggle switch in the top-right corner.
 
 Click Load unpacked and select the extension root directory.
+
+---
+
+## License & Acknowledgments
+
+This project is licensed under the **MIT License**. However, it incorporates third-party data subject to separate licensing terms:
+
+* **LEXITRON 2.0 Dictionary Data:** The dictionary dataset (`etlex-dictionary-data.js`) is copyrighted by the **National Electronics and Computer Technology Center (NECTEC)** and the **National Science and Technology Development Agency (NSTDA)**, Thailand. It is included under NECTEC's non-commercial research and educational licensing terms. The MIT license of this repository applies strictly to the extension source code, not to the dictionary dataset.
+* **LibreTranslate:** PasaThai integrates with LibreTranslate, an open-source translation engine licensed under the **GNU AGPLv3**.
+
+---
