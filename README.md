@@ -21,16 +21,18 @@
 
 ## Architecture & Project Structure
 
-├── manifest.json                  # Extension Manifest (V3)
-├── background.js                  # Service worker handling commands, storage, and context menus
-├── content.js                     # Content script handling DOM walking, text swap, and tooltips
-├── content.css                    # Content script styles
-├── popup.html                     # Extension popup interface
-├── popup.js                       # Logic for popup interactions and translation requests
-├── styles.css                     # Popup UI styles
-└── lexitron_2.0_csv/
-└── js/
-└── etlex-dictionary-data.js # Compiled LEXITRON English-Thai dictionary object
+ ```Directory
+ ├── manifest.json                  # Extension Manifest (V3)
+ ├── background.js                  # Service worker handling commands, storage, and context menus
+ ├── content.js                     # Content script handling DOM walking, text swap, and tooltips
+ ├── content.css                    # Content script styles
+ ├── popup.html                     # Extension popup interface
+ ├── popup.js                       # Logic for popup interactions and translation requests
+ ├── styles.css                     # Popup UI styles
+ └── lexitron_2.0_csv/
+ └── js/
+ └── etlex-dictionary-data.js # Compiled LEXITRON English-Thai dictionary object
+ ```
 
 
 ---
