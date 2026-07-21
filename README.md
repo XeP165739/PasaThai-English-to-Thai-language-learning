@@ -128,6 +128,7 @@ Click Load unpacked and select the extension root directory.
 ![Transslate sentence ofline](./assets/translated-ofline.png)
 *When the LibreTranslate server is unreachable, the extension seamlessly falls back to offline word-by-word substitution using the LEXITRON dictionary.*
 ---
+---
 
 
 ## License & Acknowledgments
