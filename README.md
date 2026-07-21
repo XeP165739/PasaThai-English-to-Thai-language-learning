@@ -1,6 +1,4 @@
-# PasaThai-English-to-Thai-language-learning
-
-# PasaThai: Read & Learn Thai
+# PasaThai-English-to-Thai-learning
 
 **PasaThai** is a Chrome Extension designed for language learning through **diglot weave** (gradual immersion). While you browse the web, PasaThai dynamically swaps a percentage of English words on active webpages with their Thai equivalents using a local dictionary. It also provides instant selection tooltips and full-text translation support via a local machine translation server.
 
