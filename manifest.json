@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "PasaThai: Read & Learn Thai",
+  "version": "1.0.0",
+  "description": "Learn Thai effortlessly while browsing. Highlights words, scales immersion, and provides instant hovering dictionary translations.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "action": {
+    "default_title": "Thai Matrix Learner",
+    "default_popup": "popup.html",
+    "default_icon": "world.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["content.css"],
+      "js": [
+        "lexitron_2.0_csv/js/etlex-dictionary-data.js",
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Open PasaThai Popup"
+    },
+    "transform-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Transform Current Page"
+    }
+  }
+}

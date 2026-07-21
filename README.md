@@ -61,14 +61,12 @@ To save bandwidth, disk space, and startup time, configure LibreTranslate to dow
    ```
    
 2. Start the local server limiting downloaded language models to English and Thai only:
-
   ```Bash
   libretranslate --load-only en,th --port 5000
   Via Docker:
   ```
 
 2. Run the Docker container restricting loaded languages to English and Thai:
-
   ```Bash
     docker run -p 5000:5000 libretranslate/libretranslate --load-only en,th
   ```
@@ -87,6 +85,51 @@ Enable Developer mode using the toggle switch in the top-right corner.
 Click Load unpacked and select the extension root directory.
 
 ---
+
+### Feature Snapshots
+
+#### Extension Popup Interface
+![Pop-up GUI](./assets/pop-up.png)
+*The main control panel for adjusting word swap frequency, viewing quick dictionary lookups, and triggering page transformations.*
+
+---
+
+#### In-Page Selection & Hover Tooltip
+![Selected word gui hover translation](./assets/selecting-word.png)
+*Highlighting any English word on a webpage opens a floating tooltip displaying its Thai translation, part of speech, and contextual usage.*
+
+---
+
+#### Context Menu Word Lookup
+![Pop-up translation to word selected](./assets/selected-word-translation.png)
+*Right-clicking a selected word automatically loads its dictionary definition and translation directly inside the popup.*
+
+---
+
+#### Full-Sentence API Translation
+![Pop-up translation to sentence selected](./assets/selected-sentence-translation.png)
+*Highlighting a full sentence sends the text to the local LibreTranslate server for instant full-text translation.*
+
+---
+
+#### Moderate Immersion (10% Swap Rate)
+![Transform website words to 10%](./assets/transform-10%25.png)
+*Webpage text with 10% of English words dynamically substituted with Thai equivalents for gentle language immersion.*
+
+---
+
+#### Maximum Immersion (20% Swap Rate)
+![Transform website words to 20% (max)](./assets/transform-20%25.png)
+*Webpage text scaled to the maximum 20% substitution rate for high-frequency vocabulary practice.*
+
+---
+
+#### Offline Fallback Translation
+![Transslate sentence ofline](./assets/translated-ofline.png)
+*When the LibreTranslate server is unreachable, the extension seamlessly falls back to offline word-by-word substitution using the LEXITRON dictionary.*
+---
+---
+
 
 ## License & Acknowledgments
 

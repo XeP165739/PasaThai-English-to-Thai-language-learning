@@ -1,0 +1,24 @@
+#pasa-hover-tooltip {
+    all: initial;
+    position: fixed;
+    z-index: 2147483647;
+    background-color: #1a2333 !important;
+    color: #ffffff !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+    border: 1px solid #223a5e !important;
+    max-width: 280px !important;
+    pointer-events: auto !important;
+    box-sizing: border-box !important;
+}
+
+#pasa-hover-tooltip hr {
+    border: 0 !important;
+    border-top: 1px solid #2d2d2d !important;
+    margin: 6px 0 !important;
+    display: block !important;
+    height: 1px !important;
+}

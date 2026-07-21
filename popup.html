@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h3>PasaMatrix</h3>
+    <span id="modeDisplay" class="mode-badge">ENG ➔ THAI</span>
+  </div>
+
+  <div class="control-panel">
+    <div class="slider-group">
+      <div class="slider-labels">
+        <span>Word Swap Rate:</span>
+        <span id="rateVal" style="color: #3894ff; font-weight: bold;">20%</span>
+      </div>
+      <input type="range" id="frequencySlider" min="0" max="100" value="100">
+    </div>
+    
+    <div class="btn-row">
+      <button id="btnRevert">↩️ Revert Text</button>
+      <button id="btnTransformPage" style="background: #e53935; color: white; border-color: #d32f2f;">🌐 Transform Page</button>
+    </div>
+  </div>
+
+  <div class="text-container">
+    <div>
+      <div class="result-title">Source Material Input</div>
+      <textarea id="txtInput" placeholder="Type text or capture target webpage segments..."></textarea>
+    </div>
+    <div>
+      <div class="result-title">Processed Output Data</div>
+      <div id="divOutput" class="output-box">Processed tokens will render here...</div>
+    </div>
+  </div>
+
+  <div class="result-section">
+    <div class="result-title">Dictionary Quick-Lookup Mapping</div>
+    <div id="lookupResults" style="font-size: 12px; color: #666; font-style: italic;">Select or type target vocabulary elements to reveal system indices.</div>
+  </div>
+
+  <script src="./lexitron_2.0_csv/js/etlex-dictionary-data.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
