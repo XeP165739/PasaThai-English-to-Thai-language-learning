@@ -30,8 +30,8 @@
  ├── popup.js                       # Logic for popup interactions and translation requests
  ├── styles.css                     # Popup UI styles
  └── lexitron_2.0_csv/
- └── js/
- └── etlex-dictionary-data.js # Compiled LEXITRON English-Thai dictionary object
+      └── js/
+           └── etlex-dictionary-data.js # Compiled LEXITRON English-Thai dictionary object
  ```
 
 
